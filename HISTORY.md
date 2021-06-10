@@ -1,5 +1,9 @@
 # Version History
 
+## 1.0.27 / 2021-06-10
+
+- Updated dependencies
+
 ## 1.0.26 / 2021-05-24
 
 - Updated dependencies
