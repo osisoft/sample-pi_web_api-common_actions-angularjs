@@ -1,5 +1,11 @@
 # Version History
 
+## 1.0.29 / 2021-08-11
+
+- Updated dependencies
+- Cleaned up gitignore
+- Edited package.json metadata
+
 ## 1.0.28 / 2021-07-15
 
 - Updated dependencies
