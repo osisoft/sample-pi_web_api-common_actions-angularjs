@@ -1,10 +1,14 @@
 {
-  "name": "angular-seed",
+  "name": "pi_web_api-common_actions-angularjs",
   "private": true,
-  "version": "1.0.28",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
-  "license": "MIT",
+  "version": "1.0.29",
+  "description": "A sample that demonstrates how to utilize the PI Web API in AngularJS",
+  "author": "OSIsoft, LLC",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osisoft/sample-pi_web_api-common_actions-angularjs.git"
+  },
   "dependencies": {
     "angular": "^1.8.2",
     "angular-loader": "^1.8.2",
@@ -13,9 +17,9 @@
   },
   "devDependencies": {
     "angular-mocks": "^1.8.2",
-    "eslint": "^7.30.0",
+    "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
-    "http-server": "^0.12.3",
+    "http-server": "^13.0.0",
     "jasmine-core": "^3.8.0",
     "karma": "^6.3.4",
     "karma-chrome-launcher": "~3.1.0",
