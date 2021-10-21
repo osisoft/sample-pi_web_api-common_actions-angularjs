@@ -5,7 +5,7 @@
 
 // Increase timeout interval for longer running http calls.
 
-const appsettings = require('./appsettings.json');
+import * as appsettings from './appsettings.json';
 
 if (appsettings.DEFAULT_TIMEOUT_INTERVAL) {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = appsettings.DEFAULT_TIMEOUT_INTERVAL;
