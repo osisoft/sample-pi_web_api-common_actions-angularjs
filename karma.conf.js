@@ -10,7 +10,8 @@ module.exports = function (config) {
     basePath: '',
 
     files: [
-      'test-config.js',
+      'appsettings.json',
+      'appsettings.js',
       'node_modules/angular/angular.js',
       'node_modules/angular-route/angular-route.js',
       'node_modules/angular-mocks/angular-mocks.js',
