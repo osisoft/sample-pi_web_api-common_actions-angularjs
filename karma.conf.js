@@ -15,6 +15,12 @@ module.exports = function (config) {
       'node_modules/angular-mocks/angular-mocks.js',
       'app.js',
       'app.spec.js',
+      {
+        pattern: '*.json',
+        watched: true,
+        served: true,
+        included: false,
+      },
     ],
 
     autoWatch: true,
