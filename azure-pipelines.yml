@@ -26,10 +26,6 @@ resources:
 
 variables:
   - template: '/miscellaneous/build_templates/variables.yml@templates'
-  - name: CredFile
-    value: test-config.js
-  - name: CredFileLibrary
-    value: product-readiness.piwebapi_angularjs.js
   - name: analysisProject
     value: PIWebAPI_AngularJS
 
@@ -37,12 +33,11 @@ jobs:
   - job: Tests
     pool:
       name: 00-OSIManaged-Test
-      demands: COMPUTERNAME -equals $(buildAgent)
+      demands: Agent.OS -equals Windows_NT
     steps:
-      - template: '/miscellaneous/build_templates/config.yml@templates'
+      - template: '/miscellaneous/build_templates/appsettings.yml@templates'
         parameters:
-          fileOriginal: $(CredFile)
-          fileLibrary: $(CredFileLibrary)
+          secrets: 'PIWebAPI, AFServerName, DataArchiveName, Username, Password'
 
       - template: '/run-tests.yml'
         parameters:
