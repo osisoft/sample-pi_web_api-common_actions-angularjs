@@ -5,10 +5,18 @@
 
 // Increase timeout interval for longer running http calls.
 
-const appsettings = require('./appsettings.json');
+import {
+  DEFAULT_TIMEOUT_INTERVAL,
+  PIWebAPI,
+  AFServerName,
+  Username,
+  Password,
+  AuthType,
+  DataArchiveName,
+} from './appsettings.json';
 
-if (appsettings.DEFAULT_TIMEOUT_INTERVAL) {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = appsettings.DEFAULT_TIMEOUT_INTERVAL;
+if (DEFAULT_TIMEOUT_INTERVAL) {
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = DEFAULT_TIMEOUT_INTERVAL;
 }
 
 describe('AppComponent', () => {
@@ -50,11 +58,11 @@ describe('AppComponent', () => {
   it('createDatabase should return a status code of 201 when creating a new database', (done) => {
     let returnCode = 0;
     returnCode = scope.createDatabase(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(201);
@@ -69,11 +77,11 @@ describe('AppComponent', () => {
   it('createCategory should return a status code of 201 when creating a new category', (done) => {
     let returnCode = 0;
     returnCode = scope.createCategory(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(201);
@@ -88,12 +96,12 @@ describe('AppComponent', () => {
   it('createTemplate should return a status code of 201 when creating a new template', (done) => {
     let returnCode = 0;
     returnCode = scope.createTemplate(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.DataArchiveName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      DataArchiveName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(201);
@@ -108,11 +116,11 @@ describe('AppComponent', () => {
   it('createElement should return a status code of 200 when creating a new element', (done) => {
     let returnCode = 0;
     returnCode = scope.createElement(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(200);
@@ -127,11 +135,11 @@ describe('AppComponent', () => {
   it('writeSingleValue should return a status code of 202 when writing a single value', function (done) {
     let returnCode = 0;
     returnCode = scope.writeSingleValue(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(202);
@@ -146,11 +154,11 @@ describe('AppComponent', () => {
   it('writeSetOfValues should return a status code of 202 when writing a set of values', function (done) {
     let returnCode = 0;
     returnCode = scope.writeSetOfValues(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(202);
@@ -165,11 +173,11 @@ describe('AppComponent', () => {
   it('updateAttributeValue should return a status code of 204 when updating an attribute value', function (done) {
     let returnCode = 0;
     returnCode = scope.updateAttributeValue(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(204);
@@ -184,11 +192,11 @@ describe('AppComponent', () => {
   it('readSingleValue should return a status code of 200 when reading a single value', function (done) {
     let returnCode = 0;
     returnCode = scope.readSingleValue(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(200);
@@ -203,11 +211,11 @@ describe('AppComponent', () => {
   it('readSetOfValues should return a status code of 200 when reading a set of values', function (done) {
     let returnCode = 0;
     returnCode = scope.readSetOfValues(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(200);
@@ -222,11 +230,11 @@ describe('AppComponent', () => {
   it('reducePayloadWithSelectedFields should return a status code of 200 when reducing payload with selected fields', function (done) {
     let returnCode = 0;
     returnCode = scope.reducePayloadWithSelectedFields(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(200);
@@ -241,11 +249,11 @@ describe('AppComponent', () => {
   it('doBatchCall should return a status code of 207 when performing a batch call', function (done) {
     let returnCode = 0;
     returnCode = scope.doBatchCall(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(207);
@@ -260,11 +268,11 @@ describe('AppComponent', () => {
   it('deleteElement should return a status code of 204 when deleteing the element', function (done) {
     let returnCode = 0;
     returnCode = scope.deleteElement(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(204);
@@ -279,11 +287,11 @@ describe('AppComponent', () => {
   it('deleteTemplate should return a status code of 204 when deleteing the template', function (done) {
     let returnCode = 0;
     returnCode = scope.deleteTemplate(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(204);
@@ -298,11 +306,11 @@ describe('AppComponent', () => {
   it('deleteCategory should return a status code of 204 when deleteing the category', function (done) {
     let returnCode = 0;
     returnCode = scope.deleteCategory(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(204);
@@ -317,11 +325,11 @@ describe('AppComponent', () => {
   it('deleteDatabase should return a status code of 204 when deleteing the database', function (done) {
     let returnCode = 0;
     returnCode = scope.deleteDatabase(
-      appsettings.PIWebAPI,
-      appsettings.AFServerName,
-      appsettings.Username,
-      appsettings.Password,
-      appsettings.AuthType
+      PIWebAPI,
+      AFServerName,
+      Username,
+      Password,
+      AuthType
     );
     returnCode.then(function (result) {
       expect(result).toEqual(204);
