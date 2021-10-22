@@ -5,7 +5,11 @@
 
 // Increase timeout interval for longer running http calls.
 
-var appsettings = getJSONFixture('appsettings.json');
+var appsettings;
+jasmine.getFixtures().fixturesPath = 'base/';
+var f = readFixtures('appsettings.json');
+json = JSON.parse(f);
+expect(appsettings).toBeDefined();
 
 if (appsettings.DEFAULT_TIMEOUT_INTERVAL) {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = appsettings.DEFAULT_TIMEOUT_INTERVAL;
