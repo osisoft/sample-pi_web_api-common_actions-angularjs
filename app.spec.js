@@ -8,8 +8,7 @@
 var appsettings;
 jasmine.getFixtures().fixturesPath = 'base/';
 var f = readFixtures('appsettings.json');
-json = JSON.parse(f);
-expect(appsettings).toBeDefined();
+appsettings = JSON.parse(f);
 
 if (appsettings.DEFAULT_TIMEOUT_INTERVAL) {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = appsettings.DEFAULT_TIMEOUT_INTERVAL;

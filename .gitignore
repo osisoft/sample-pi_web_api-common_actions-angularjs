@@ -119,6 +119,7 @@ dist
 
 # unit tests
 junitresults.xml
+junitResults/
 
 # Credential config files
 test-config.js
