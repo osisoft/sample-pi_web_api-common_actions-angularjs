@@ -6,6 +6,10 @@
 - New developer dependencies jasmine-jquery and jquery
 - changed test-config.ts to appsetting.json
 
+## 1.0.30 / 2021-10-21
+
+- Updated dependencies
+
 ## 1.0.29 / 2021-08-11
 
 - Updated dependencies
