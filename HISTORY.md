@@ -1,5 +1,9 @@
 # Version History
 
+## 1.1.1 / 2021-11-05
+
+- Changed agent used in pipeline
+
 ## 1.1.0 / 2021-10-29
 
 - Update pipelines to use Azure Key Vault for secrets
