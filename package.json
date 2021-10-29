@@ -13,7 +13,8 @@
     "angular": "^1.8.2",
     "angular-loader": "^1.8.2",
     "angular-route": "^1.8.2",
-    "html5-boilerplate": "8.0.0"
+    "html5-boilerplate": "8.0.0",
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.8.2",
@@ -21,6 +22,8 @@
     "eslint-config-google": "^0.14.0",
     "http-server": "^14.0.0",
     "jasmine-core": "^3.10.0",
+    "jasmine-jquery": "^2.1.1",
+    "jquery": "^3.6.0",
     "karma": "^6.3.5",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.3",

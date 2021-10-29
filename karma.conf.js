@@ -10,12 +10,19 @@ module.exports = function (config) {
     basePath: '',
 
     files: [
-      'test-config.js',
       'node_modules/angular/angular.js',
       'node_modules/angular-route/angular-route.js',
       'node_modules/angular-mocks/angular-mocks.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
       'app.js',
       'app.spec.js',
+      {
+        pattern: '*.json',
+        watched: true,
+        served: true,
+        included: false,
+      },
     ],
 
     autoWatch: true,

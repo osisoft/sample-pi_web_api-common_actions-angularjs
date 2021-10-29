@@ -1,5 +1,11 @@
 # Version History
 
+## 1.1.0 / 2021-10-29
+
+- Update pipelines to use Azure Key Vault for secrets
+- New developer dependencies jasmine-jquery and jquery
+- changed test-config.ts to appsetting.json
+
 ## 1.0.30 / 2021-10-21
 
 - Updated dependencies
