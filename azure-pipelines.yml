@@ -38,6 +38,9 @@ jobs:
     pool:
       name: 00-OSIManaged-Containers
       demands: Agent.OS -equals Windows_NT
+    variables:
+      -name: DEFAULT_TIMEOUT_INTERVAL
+      -value: 20000
     steps:
       - template: '/miscellaneous/build_templates/appsettings.yml@templates'
         parameters:
