@@ -1,7 +1,7 @@
 {
   "name": "pi_web_api-common_actions-angularjs",
   "private": true,
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A sample that demonstrates how to utilize the PI Web API in AngularJS",
   "author": "OSIsoft, LLC",
   "license": "Apache-2.0",
