@@ -1,6 +1,6 @@
 # PI Web API AngularJS Sample
 
-**Version:** 1.1.2
+**Version:** 1.1.3
 
 [![Build Status](https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/PI-System/osisoft.sample-pi_web_api-common_actions-angularjs?repoName=osisoft%2Fsample-pi_web_api-common_actions-angularjs&branchName=main)](https://dev.azure.com/osieng/engineering/_build/latest?definitionId=2667&repoName=osisoft%2Fsample-pi_web_api-common_actions-angularjs&branchName=main)
 
@@ -114,4 +114,4 @@ For the main PI Web API Samples landing page [ReadMe](https://github.com/osisoft
 
 For the main PI System Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System)
 
-For the main OSIsoft Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples)
+For the main AVEVA Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples)
