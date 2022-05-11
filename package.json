@@ -10,7 +10,7 @@
     "url": "https://github.com/osisoft/sample-pi_web_api-common_actions-angularjs.git"
   },
   "dependencies": {
-    "angular": "^1.8.2",
+    "angular": "^1.6.10",
     "angular-loader": "^1.8.2",
     "angular-route": "^1.8.2",
     "html5-boilerplate": "8.0.0",
