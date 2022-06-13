@@ -2,7 +2,7 @@
 
 ## 1.1.5 / 2022-06-09
 
-- Changed pipeline to be able to dynamically pull the timeout value from ADO
+- Parameterize the Azure Pipeline's timeout value
 - Updated dependencies
 
 ## 1.1.4 / 2022-03-15
