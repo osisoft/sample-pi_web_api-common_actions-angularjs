@@ -33,14 +33,18 @@ variables:
   - name: analysisProject
     value: PIWebAPI_AngularJS
 
+parameters:
+  - name: DefaultTimeoutInterval
+    default: 20000
+
 jobs:
   - job: Tests
     pool:
       name: 00-OSIManaged-Containers
       demands: Agent.OS -equals Windows_NT
     variables:
-      -name: DEFAULT_TIMEOUT_INTERVAL
-      -value: 20000
+      - name: DEFAULT_TIMEOUT_INTERVAL
+        value: ${{ parameters.DefaultTimeoutInterval }}
     steps:
       - template: '/miscellaneous/build_templates/appsettings.yml@templates'
         parameters:

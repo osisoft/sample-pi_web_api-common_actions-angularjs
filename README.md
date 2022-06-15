@@ -1,6 +1,6 @@
 # PI Web API AngularJS Sample
 
-**Version:** 1.1.4
+**Version:** 1.1.5
 
 [![Build Status](https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/PI-System/osisoft.sample-pi_web_api-common_actions-angularjs?repoName=osisoft%2Fsample-pi_web_api-common_actions-angularjs&branchName=main)](https://dev.azure.com/osieng/engineering/_build/latest?definitionId=2667&repoName=osisoft%2Fsample-pi_web_api-common_actions-angularjs&branchName=main)
 
@@ -49,8 +49,8 @@ For example:
 - In the terminal, use the following command to run the tests: `npx karma start`
 - If you run into any issues with the Jasmine tests timing out, use the `DEFAULT_TIMEOUT_INTERVAL` setting in `appsettings.json` and set it to a higher value. For example:
 
-```javascript
-DEFAULT_TIMEOUT_INTERVAL: 10000;
+```json
+"DEFAULT_TIMEOUT_INTERVAL": 10000;
 ```
 
 ## System Configuration
