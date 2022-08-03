@@ -1,6 +1,9 @@
 # PI Web API AngularJS Sample
 
-**Version:** 1.1.6
+| :loudspeaker: **Notice**: This sample has been Archived as AngularJS support has officially ended. Dependencies will not be updated and pipelines will not be run. For a similar visualization sample, please refer to our [Angular sample](https://github.com/osisoft/sample-pi_web_api-common_actions-angular). Please contact samples@osisoft.com or visit The OSIsoft Feedback Site for comments |
+| -----------------------------------------------------------------------------------------------|
+
+**Version:** ARCHIVED
 
 [![Build Status](https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/PI-System/osisoft.sample-pi_web_api-common_actions-angularjs?repoName=osisoft%2Fsample-pi_web_api-common_actions-angularjs&branchName=main)](https://dev.azure.com/osieng/engineering/_build/latest?definitionId=2667&repoName=osisoft%2Fsample-pi_web_api-common_actions-angularjs&branchName=main)
 
